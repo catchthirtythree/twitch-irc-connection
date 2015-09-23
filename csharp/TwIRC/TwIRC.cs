@@ -7,7 +7,7 @@ using System.IO;
 
 namespace TwIRC 
 {
-    class Program 
+    class TwIRC
     {
         const string NEWLINE = "\r\n";
         const string HOST = "irc.twitch.tv";
