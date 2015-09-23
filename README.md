@@ -11,4 +11,4 @@ This repository is meant to refamiliarize myself with different programming lang
 
 ##### Steps:
 
-1. Connect to irc.twitch.tv:6667, authenticate and display incoming messages.
+1. Connect to irc.twitch.tv:6667, authenticate, join a channel and display incoming messages.
