@@ -1,0 +1,12 @@
+# Eclipse
+.settings
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+build/
+
+# Log Files
+*.log
