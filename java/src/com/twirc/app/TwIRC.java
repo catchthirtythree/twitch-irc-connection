@@ -11,7 +11,7 @@ import java.net.UnknownHostException;
 public class TwIRC {
 	private static final String NEWLINE = "\r\n";
 	private static final String HOST = "irc.twitch.tv";
-	private static final Integer PORT = 6667;
+	private static final int PORT = 6667;
 	
 	public static void main(String[] args) throws UnknownHostException, IOException {
 		String user, pass, owner, channel;
