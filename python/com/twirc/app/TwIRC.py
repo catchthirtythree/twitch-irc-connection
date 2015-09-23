@@ -5,10 +5,10 @@ NEWLINE = '\r\n'
 HOST = 'irc.twitch.tv'
 PORT = 6667
 
-nick = 'twchy'
-pwrd = 'oauth:xqdfzyuqerfhf3a8ogga8mprc8h85a'
-owner = 'SNeeaaky'
-channel = '#jendenise'
+nick = ''
+pwrd = ''
+owner = ''
+channel = '#'
 
 # Open the connection to the server
 irc = socket.socket()
