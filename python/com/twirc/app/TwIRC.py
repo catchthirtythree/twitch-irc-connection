@@ -7,7 +7,6 @@ PORT = 6667
 
 nick = ''
 pwrd = ''
-owner = ''
 channel = '#'
 
 # Open the connection to the server
