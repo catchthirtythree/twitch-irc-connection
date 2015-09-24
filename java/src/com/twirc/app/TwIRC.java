@@ -14,8 +14,8 @@ public class TwIRC {
 	private static final int PORT = 6667;
 	
 	public static void main(String[] args) throws UnknownHostException, IOException {
-		String user, pass, owner, channel;
-		user = "";
+		String nick, pass, owner, channel;
+		nick = "";
 		pass = "";
 		channel = "#";
 
@@ -28,7 +28,7 @@ public class TwIRC {
 			/* Write authentication information */
 			out.write(
 				"PASS " + pass + NEWLINE + 
-				"NICK " + user + NEWLINE + 
+				"NICK " + nick + NEWLINE + 
 				"JOIN " + channel + NEWLINE
 			);
 			out.flush();
