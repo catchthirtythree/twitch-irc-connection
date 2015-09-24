@@ -17,7 +17,6 @@ public class TwIRC {
 		String user, pass, owner, channel;
 		user = "";
 		pass = "";
-		owner = "";
 		channel = "#";
 
 		/* Open the connection to the server */
@@ -28,7 +27,6 @@ public class TwIRC {
 
 			/* Write authentication information */
 			out.write(
-				"USER " + user + " 0 * :" + owner + NEWLINE + 
 				"PASS " + pass + NEWLINE + 
 				"NICK " + user + NEWLINE + 
 				"JOIN " + channel + NEWLINE
