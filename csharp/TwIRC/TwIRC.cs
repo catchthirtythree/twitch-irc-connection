@@ -18,7 +18,7 @@ namespace TwIRC
             string nick, pass, channel;
             nick = "";
             pass = "";
-            channel = "";
+            channel = "#";
             
             /* Create a client object */
             using (TcpClient socket = new TcpClient())
