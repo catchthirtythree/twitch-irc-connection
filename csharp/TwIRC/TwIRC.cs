@@ -15,8 +15,8 @@ namespace TwIRC
 
         static void Main(string[] args) 
         {
-            string user, pass, channel;
-            user = "";
+            string nick, pass, channel;
+            nick = "";
             pass = "";
             channel = "";
             
@@ -33,7 +33,7 @@ namespace TwIRC
                 /* Write authentication information */
                 output.Write(
                     "PASS " + pass + NEWLINE +
-                    "NICK " + user + NEWLINE +
+                    "NICK " + nick + NEWLINE +
                     "JOIN " + channel + NEWLINE
                 );
                 output.Flush();
