@@ -10,7 +10,7 @@ I'm not sure whether to split packages into step# or not.
 - Java
 - CSharp
 - Python
-- JavaScript (foundation, websockify, twitch)
+- ~~JavaScript (foundation, websockify, twitch)~~
 - functional language here
 - other languages here
 
