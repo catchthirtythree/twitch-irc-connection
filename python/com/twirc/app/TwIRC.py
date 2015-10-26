@@ -11,7 +11,7 @@ channel = '#'
 
 # Open the connection to the server
 irc = socket.socket()
-irc.connect()
+irc.connect((HOST, PORT))
 
 # Send authentication information
 irc.send('PASS ' + pwrd + NEWLINE)
