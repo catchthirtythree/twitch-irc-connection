@@ -14,7 +14,7 @@ public class TwIRC {
 	private static final int PORT = 6667;
 	
 	public static void main(String[] args) throws UnknownHostException, IOException {
-		String nick, pass, owner, channel;
+		String nick, pass, channel;
 		nick = "";
 		pass = "";
 		channel = "#";
