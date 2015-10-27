@@ -5,6 +5,8 @@ I will be doing this in a step-by-step process so that no language falls behind.
 I will only make use of libraries if it is absolutely necessary to continue.
 I will try to use as little OO programming as possible until I feel it is necessary.
 
+We'll be referring to this a lot: https://github.com/justintv/Twitch-API/blob/master/IRC.md
+
 ##### Languages:
 - Java
 - CSharp
@@ -14,6 +16,6 @@ I will try to use as little OO programming as possible until I feel it is necess
 - functional language here
 
 ##### Steps:
-1. Connect to irc.twitch.tv:6667, authenticate, join a channel and display incoming messages.
-2. Parse incoming messages and add simple commands for the bot to respond to.
+1. Connecting to irc.twitch.tv:6667, authenticating, joining a channel and displaying incoming messages.
+2. Taking care of PING events, parsing incoming messages and ading simple commands for the bot to respond to.
 3. 
