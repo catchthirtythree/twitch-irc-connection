@@ -17,5 +17,5 @@ We'll be referring to this a lot: https://github.com/justintv/Twitch-API/blob/ma
 
 ##### Steps:
 1. Connecting to irc.twitch.tv:6667, authenticating, joining a channel and displaying incoming messages.
-2. Taking care of PING events, parsing incoming messages and ading simple commands for the bot to respond to.
+2. Taking care of PING events, parsing incoming messages and adding simple commands for the bot to respond to.
 3. 
