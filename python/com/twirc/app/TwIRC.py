@@ -10,14 +10,22 @@ pwrd = ''
 channel = '#'
 
 # Open the connection to the server
-irc = socket.socket()
-irc.connect((HOST, PORT))
+socket = socket.socket()
+socket.connect((HOST, PORT))
 
 # Send authentication information
-irc.send('PASS ' + pwrd + NEWLINE)
-irc.send('NICK ' + nick + NEWLINE)
-irc.send('JOIN ' + channel + NEWLINE)
+socket.send(
+    'PASS ' + pwrd + NEWLINE +
+    'NICK ' + nick + NEWLINE +
+    'JOIN ' + channel + NEWLINE
+)
 
 # Read input indefinitely
 while True:
-    print irc.recv(1024).rstrip()
+    buf = socket.recv(1024).rstrip()
+    
+    # Take care of the PING event
+    if "PING" in buf:
+        socket.send(buf.replace("PING", "PONG"))
+    
+    print buf

@@ -36,6 +36,12 @@ public class TwIRC {
 			/* Read input indefinitely */
 			String buffer;
 			while ((buffer = in.readLine()) != null) {
+				/* Take care of the PING event */
+				if (buffer.contains("PING")) {
+					out.write(buffer.replace("PING", "PONG"));
+					out.flush();
+				}
+				
 				System.out.println(buffer);
 			}
 		}

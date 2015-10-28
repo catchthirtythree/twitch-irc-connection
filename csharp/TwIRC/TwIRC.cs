@@ -18,7 +18,7 @@ namespace TwIRC
             string nick, pass, channel;
             nick = "";
             pass = "";
-            channel = "#";
+            channel = "";
             
             /* Create a client object */
             using (TcpClient socket = new TcpClient())
@@ -42,6 +42,13 @@ namespace TwIRC
                 String buffer;
                 while ((buffer = input.ReadLine()) != null)
                 {
+                    /* Take care of the PING event */
+                    if (buffer.Contains("PING"))
+                    {
+                        output.Write(buffer.Replace("PING", "PONG"));
+                        output.Flush();
+                    }
+
                     Console.WriteLine(buffer);
                 }
             }
