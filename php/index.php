@@ -11,9 +11,11 @@
 	$socket = @fsockopen($HOST, $PORT);
 	
 	# Write authentication information
-	@fwrite($socket, "PASS {$pass}{$NEWLINE}");
-	@fwrite($socket, "NICK {$nick}{$NEWLINE}");
-	@fwrite($socket, "JOIN {$channel}{$NEWLINE}");
+	@fwrite($socket, 
+		"PASS {$pass}{$NEWLINE}" .
+		"NICK {$nick}{$NEWLINE}" .
+		"JOIN {$channel}{$NEWLINE}"
+	);
 	
 	# Read input indefinitely
 	while (!feof($socket)) {
